@@ -3,12 +3,15 @@ from flask_mysqldb import MySQL
 from flask import request
 import os
 
+ONID = 'ENTER ONID HERE'
+MYSQL_PASSWORD = 'ENTER MYSQL PASSWORD HERE' #last 4 of onid
+
 app = Flask(__name__)
 
 app.config['MYSQL_HOST'] = 'classmysql.engr.oregonstate.edu'
-app.config['MYSQL_USER'] = 'cs340_gifforky'
-app.config['MYSQL_PASSWORD'] = '6269' #last 4 of onid
-app.config['MYSQL_DB'] = 'cs340_gifforky'
+app.config['MYSQL_USER'] = 'cs340' + ONID
+app.config['MYSQL_PASSWORD'] = MYSQL_PASSWORD 
+app.config['MYSQL_DB'] = 'cs340' + ONID
 app.config['MYSQL_CURSORCLASS'] = "DictCursor"
 
 
