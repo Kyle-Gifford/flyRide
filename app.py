@@ -2,9 +2,11 @@ from flask import Flask, render_template, json, redirect
 from flask_mysqldb import MySQL
 from flask import request
 import os
+from credenitals import *
 
-ONID = 'ENTER ONID HERE'
-MYSQL_PASSWORD = 'ENTER MYSQL PASSWORD HERE' #last 4 of onid
+ONID = credenitals.onid #onid (i.e. doejo)
+MYSQL_PASSWORD = credenitals.password #last 4 digits of onid
+PORT = credenitals.port #enter port number
 
 app = Flask(__name__)
 
@@ -40,4 +42,4 @@ def root():
 if __name__ == "__main__":
 
     #Start the app on port 3000, it will be different once hosted
-    app.run(port=5535, debug=True)
+    app.run(port=PORT, debug=True)
