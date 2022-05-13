@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+    <title>Users</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="tables.js" defer></script>
+    <!--This is where css and script language goes-->
+</head>
+
+
+<body>
+
+    <h1>Users</h1>
+    <div class="selection">
+        <a href="index.html">Users</a>
+        <a href="Airports.html">Airports</a>
+        <a href="Cars.html">Cars</a>
+        <a href="Parking_Spaces">Parking_Spaces</a>
+        <a href="Rental_Orders.html">Rental_Orders</a>
+        <a href="Rental_Orders_Details.html">Rental_Orders_Details</a>
+    </div>
+
+    <div id="dataView">
+        <button class="addButton">Add</button>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>user_ID</th>
+                    <th>first_name</th>
+                    <th>last_name</th>
+                    <th>email</th>
+                    <th>drivers_licence_number</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+
+                <tr>
+                    <th class="data">1</th>
+                    <th class="data">Kyle</th>
+                    <th class="data">Gifford</th>
+                    <th class="data">kyle@grazymail.com</th>
+                    <th class="data">123456789</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+
+                </tr>
+
+                <tr>
+                    <th class="data">2</th>
+                    <th class="data">Joshua</th>
+                    <th class="data">Corbin</th>
+                    <th class="data">josh@coolguy.com</th>
+                    <th class="data">987654321</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">3</th>
+                    <th class="data">John</th>
+                    <th class="data">Doe</th>
+                    <th class="data">a@b.com</th>
+                    <th class="data">D4772334</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">4</th>
+                    <th class="data">Jane</th>
+                    <th class="data">Doe</th>
+                    <th class="data">r@c.com</th>
+                    <th class="data">D4772337</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">5</th>
+                    <th class="data">Mary</th>
+                    <th class="data">Doe</th>
+                    <th class="data">m@does.com</th>
+                    <th class="data">D4772338</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">6</th>
+                    <th class="data">Bob</th>
+                    <th class="data">Doe</th>
+                    <th class="data">b@doe.com</th>
+                    <th class="data">D4772339</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">7</th>
+                    <th class="data">Sally</th>
+                    <th class="data">Doe</th>
+                    <th class="data">s@doe.com</th>
+                    <th class="data">D4772340</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modalContent">
+            <span class="close">X</span>
+            <form id="add">
+                <legend class="legend"><strong>Add User</strong></legend>
+                <label>Name</label>
+                <input type="text">
+                <label>Email</label>
+                <input type="text">
+                <label>Drivers Licence Number</label>
+                <input type="text">
+            </form>
+            <button class="confirm">Confirm</button>
+            
+        </div>
+    </div>
+
+
+</body>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <title>Rental Orders Details</title>
+    <link rel="stylesheet" href="style.css">
+    <!--This is where css and script language goes-->
+</head>
+
+
+<body>
+
+    <h1>Rental Orders Details</h1>
+    <div class="selection">
+        <a href="index.html">Users</a>
+        <a href="Airports.html">Airports</a>
+        <a href="Cars.html">Cars</a>
+        <a href="Parking_Spaces.html">Parking_Spaces</a>
+        <a href="Rental_Orders.html">Rental_Orders</a>
+        <a href="Rental_Orders_Details.html">Rental_Orders_Details</a>
+    </div>
+
+    <div id="dataView">
+        <button class="addButton">Add</button>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>rental_order_ID</th>
+                    <th>car_ID</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+
+                <tr>
+                    <th class="data">1</th>
+                    <th class="data">KCN 4887</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+
+                </tr>
+
+                <tr>
+                    <th class="data">2</th>
+                    <th class="data">JXE 260</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">2</th>
+                    <th class="data">PBE 341</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+
+    <div class="modal" id="myModal">
+        <div class="modalContent">
+            <span class="close">X</span>
+            <form id="add">
+                <legend class="legend"><strong>Rental Order Detail</strong></legend>
+                <label>rental_order_ID</label>
+                <input type="text">
+                <label>car_ID</label>
+                <input type="text">
+            </form>
+            <button class="confirm">Confirm</button>
+        </div>
+    </div>
+
+    
+
+    
+</body>

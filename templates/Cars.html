@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<head>
+    <title>Cars</title>
+    <link rel="stylesheet" href="style.css">
+    <!--This is where css and script language goes-->
+</head>
+
+
+<body>
+
+    <h1>Cars</h1>
+    <div class="selection">
+        <a href="index.html">Users</a>
+        <a href="Airports.html">Airports</a>
+        <a href="Cars.html">Cars</a>
+        <a href="Parking_Spaces.html">Parking_Spaces</a>
+        <a href="Rental_Orders.html">Rental_Orders</a>
+        <a href="Rental_Orders_Details.html">Rental_Orders_Details</a>
+    </div>
+
+    <div id="dataView">
+        <button class="addButton">Add</button>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>car_ID</th>
+                    <th>available</th>
+                    <th>make</th>
+                    <th>model</th>
+                    <th>color</th>
+                    <th>return_by_date</th>
+                    <th>owner_ID</th>
+                    <th>current_parking_ID</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+
+                <tr>
+                    <th class="data">KCN 4887</th>
+                    <th class="data">0</th>
+                    <th class="data">Honda</th>
+                    <th class="data">Accord</th>
+                    <th class="data">Black</th>
+                    <th class="data">2022-06-01</th>
+                    <th class="data">1</th>
+                    <th class="data">NULL</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+
+                </tr>
+
+                <tr>
+                    <th class="data">XVD 9979</th>
+                    <th class="data">0</th>
+                    <th class="data">Honda</th>
+                    <th class="data">Fit</th>
+                    <th class="data">Yellow</th>
+                    <th class="data">NULL</th>
+                    <th class="data">2</th>
+                    <th class="data">NULL</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">NCY 1198</th>
+                    <th class="data">1</th>
+                    <th class="data">Honda</th>
+                    <th class="data">Civic</th>
+                    <th class="data">Red</th>
+                    <th class="data">2022-05-05</th>
+                    <th class="data">1</th>
+                    <th class="data">1</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">JSG 815</th>
+                    <th class="data">1</th>
+                    <th class="data">Ford</th>
+                    <th class="data">Focus</th>
+                    <th class="data">Blue</th>
+                    <th class="data">2022-05-07</th>
+                    <th class="data">6</th>
+                    <th class="data">30</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">MGB 346</th>
+                    <th class="data">0</th>
+                    <th class="data">Toyota</th>
+                    <th class="data">Camry</th>
+                    <th class="data">Green</th>
+                    <th class="data">NULL</th>
+                    <th class="data">5</th>
+                    <th class="data">NULL</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">WSB 713</th>
+                    <th class="data">1</th>
+                    <th class="data">Tesla</th>
+                    <th class="data">Model S</th>
+                    <th class="data">White</th>
+                    <th class="data">2022-05-03</th>
+                    <th class="data">3</th>
+                    <th class="data">31</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">JXE 260</th>
+                    <th class="data">0</th>
+                    <th class="data">Tesla</th>
+                    <th class="data">Model X</th>
+                    <th class="data">Black</th>
+                    <th class="data">2022-05-04</th>
+                    <th class="data">4</th>
+                    <th class="data">NULL</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">BMJ 224</th>
+                    <th class="data">1</th>
+                    <th class="data">Tesla</th>
+                    <th class="data">Model 3</th>
+                    <th class="data">Red</th>
+                    <th class="data">NULL</th>
+                    <th class="data">5</th>
+                    <th class="data">32</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">PBE 341</th>
+                    <th class="data">0</th>
+                    <th class="data">Tesla</th>
+                    <th class="data">Model Y</th>
+                    <th class="data">Blue</th>
+                    <th class="data">2022-05-04</th>
+                    <th class="data">6</th>
+                    <th class="data">NULL</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+                <tr>
+                    <th class="data">DBU 625</th>
+                    <th class="data">1</th>
+                    <th class="data">Tesla</th>
+                    <th class="data">Model Z</th>
+                    <th class="data">Yellow</th>
+                    <th class="data">2022-05-06</th>
+                    <th class="data">7</th>
+                    <th class="data">33</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modalContent">
+            <span class="close">X</span>
+            <form id="add">
+                <legend class="legend"><strong>Add Car</strong></legend>
+                <label>car_ID</label>
+                <input type="text">
+                <label>available</label>
+                <input type="text">
+                <label>make</label>
+                <input type="text">
+                <label>model</label>
+                <input type="text">
+                <label>color</label>
+                <input type="text">
+                <label>return_by_date</label>
+                <input type="text">
+                <label>owner_ID</label>
+                <input type="text">
+                <label>current_parking_ID</label>
+                <input type="text">
+            </form>
+            <button class="confirm">Confirm</button>
+        </div>
+    </div>
+</body>

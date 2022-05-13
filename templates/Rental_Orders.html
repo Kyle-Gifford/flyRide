@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>Rental Orders</title>
+    <link rel="stylesheet" href="style.css">
+    <!--This is where css and script language goes-->
+</head>
+
+
+<body>
+
+    <h1>Rental Orders</h1>
+    <div class="selection">
+        <a href="index.html">Users</a>
+        <a href="Airports.html">Airports</a>
+        <a href="Cars.html">Cars</a>
+        <a href="Parking_Spaces.html">Parking_Spaces</a>
+        <a href="Rental_Orders.html">Rental_Orders</a>
+        <a href="Rental_Orders_Details.html">Rental_Orders_Details</a>
+    </div>
+
+    <div id="dataView">
+        <button class="addButton">Add</button>
+        <table class="table">
+            <tbody>
+                <tr>
+                    <th>renter_ID</th>
+                    <th>airport_ID</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+
+                <tr>
+                    <th class="data">1</th>
+                    <th class="data">BOS</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+
+                </tr>
+
+                <tr>
+                    <th class="data">2</th>
+                    <th class="data">DFW</th>
+                    <th><button class="editButton">Edit</button></th>
+                    <th><button class="deleteButton">Delete</button></th>
+                </tr>
+
+            </tbody>
+        </table>
+    </div>
+
+    <div class="modal" id="myModal">
+        <div class="modalContent">
+            <span class="close">X</span>
+            <form id="add">
+                <legend class="legend"><strong>Add Rental Order</strong></legend>
+                <label>renter_ID</label>
+                <input type="text">
+                <label>airport_ID</label>
+                <input type="text">
+            </form>
+            <button class="confirm">Confirm</button>
+        </div>
+    </div>
+    
+</body>
